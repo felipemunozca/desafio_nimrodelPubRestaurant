@@ -1,0 +1,85 @@
+/* Menu de la pagina. */
+#banner {
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+
+/* Formularios. */
+form {
+    color: white;
+    background-color: #070707;
+    width: 400px;
+}
+
+/* pie de pagina. */
+footer {
+    background-color: #070707;
+    background-image: url('../images/fondo.jpg');
+    height: 100px;
+}
+
+/* Estilos para el modal de productos. */
+.modal-productos {
+    display: none;
+}
+.modal-productos{
+    display:none;
+    width: 100%;
+    height: 100%;
+    z-index:1;
+    position:fixed;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-contenido{
+    background-color: #070707;
+    width:70%;
+    margin: 8% auto;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal-productos img {
+    display:block;
+    margin:0 auto;
+    width: 70%;
+    padding-bottom: 10px;
+}
+
+
+
+
+/**
+* Tuve que hacer trampa, ya que no supe como darle una altura igual a todas las imágenes de carrusel, decidí aplicar media queries
+* para los diferentes tamaños según mi criterio de como se podrían ver bien.
+*/
+@media (max-width: 576px) { 
+    .carousel-item > img {
+        height: 30vh;
+    }
+    #carousel-nosotros-contenido {
+        width: 90%;
+        font-size: 20px;
+    }
+    .carousel-nosotros-ajuste {
+        width: 90%;
+    }
+}
+@media (min-width: 576px) { 
+    .carousel-item > img {
+        height: 50vh;
+    }
+}
+@media (min-width: 768px) { 
+    .carousel-item > img {
+        height: 50vh;
+    }
+}
+@media (min-width: 992px) {
+    .carousel-item > img {
+        height: 90vh;
+    }
+}

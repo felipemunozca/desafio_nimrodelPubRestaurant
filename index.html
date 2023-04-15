@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Sesión 12</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/n.png">
+    <!-- Font awasome -->
+    <link rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-
+        UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+    
+    <!-- JQuery -->
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+
+    <!-- Font Awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <!-- Barra de navegación. -->
+    <nav class="navbar navbar-expand-lg navbar-light pt-2 pb-2" id="banner">
+        <div class="container-fluid">
+            <img src="./assets/images/n.png" alt="" width="50" height="50">
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                    <a class="nav-link text-white" href="#">nuestros productos</a>
+                    <a class="nav-link text-white" href="#" id="menu2">sobre nosotros</a>
+                    <a class="nav-link text-white" href="index.html#titulo3" id="menu3">comuniquémonos</a>
+                    <a class="nav-link text-white" href="index.html#titulo4" id="menu4">reserva</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Modal productos oculto. -->
+    <div class="modal-productos">
+        <div class="modal-contenido">
+            <i class="fa-solid fa-xmark fa-beat fa-xl modal-cerrar" style="color: #fff;"></i>
+            <h1 class="text-white text-center" id="modal-titulo"></h1>
+            <p class="text-white text-center" id="modal-descripcion"></p>
+            <img class="justify-content-center" id="modal-imagen" src="" alt="">
+        </div>
+        
+    </div>
+
+    <!-- Nombre del bar. -->
+    <header class="text-center mb-4">
+        <h1>Nimrodel Pub Restaurant</h1>
+    </header>
+
+    <!-- Carta de productos. -->
+    <main id="productos">
+        <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-lg-4 col-sm-10 text-center">
+                        <img src="./assets/images/bebidas.jpg" alt="gaseosas" class="img-fluid imagen-producto" >
+                        <h4>GASEOSAS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-10 text-center">
+                        <img src="./assets/images/tablas.jpg" alt="tablas" class="img-fluid imagen-producto">
+                        <h4>TABLAS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-10 text-center">
+                        <img src="./assets/images/shop.jpeg" alt="cerveza" class="img-fluid imagen-producto">
+                        <h4>SHOP CERVEZA</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+    
+    <!-- Formulario 1 -->
+    <section id="formulario-1" class="d-flex align-items-center justify-content-center text-center mt-4 mb-3">
+        <div class="container ">
+            <form class="p-3 mx-auto d-none d-sm-none d-md-block" id="form-comuniquemonos">
+                <h2 id="titulo3">Comuniquémonos</h2>
+                <div class="mb-3">
+                    <label for="f1nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="f1nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="f1correo">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="f1telefono">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Motivo</label>
+                    <!-- <select class="form-select" aria-label="Default select example">
+                        <option selected>Felicitaciones</option>
+                        <option value="1">Reclamos</option>
+                        <option value="2">Consultas</option>
+                        <option value="3">Sugerencias</option>
+                    </select> -->
+                    <input class="form-control" list="datalistOptions" id="f1motivo">
+                    <datalist id="datalistOptions">
+                        <option value="Felicitaciones">
+                        <option value="Reclamos">
+                        <option value="Consultas">
+                        <option value="Sugerencias">
+                    </datalist>
+                </div>
+                <div class="mb-3">
+                    <textarea name="" id="f1mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>    
+        </div>
+    </section>
+
+    <!-- Formulario 2 -->
+    <section id="formulario-2" class="d-flex align-items-center justify-content-center text-center mb-3">
+        <div class="container ">
+            <form class="p-3 mx-auto d-none d-sm-none d-md-block" id="form-reserva">
+                <h2 id="titulo4">Reserva</h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="f2nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="f2correo">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="f2telefono">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="f2fecha">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Hora</label>
+                    <input type="time" class="form-control" id="f2hora">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Cantidad de asistentes</label>
+                    <input type="number" class="form-control" id="f2asistentes">
+                </div>
+                <button id="btnReservar" type="submit" class="btn btn-primary">Reservar</button>
+            </form>    
+        </div>
+    </section>
+
+    <!-- carrusel -->
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/vino.jpg" class="d-block w-100" alt="vino">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/mojito.jpg" class="d-block w-100"   alt="mojito">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/images/chorillana.jpg" class="d-block w-100" alt="chorrillana">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="d-flex align-items-center justify-content-center">
+        <p class="text-white">Todos los derechos reservados <i class="far fa-registered"></i></p>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+    </script>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
