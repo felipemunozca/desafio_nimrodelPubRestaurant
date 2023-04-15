@@ -11,4 +11,4 @@ Para mostrarle al dueño del pub como queda nuestra página es que hemos decidid
 
 ## Live Demo
 
-Proyecto corriendo en GitHub Pages: [Aquí](https://felipemunozca.github.io/ToDoListJS_bluuweb/)
+Proyecto corriendo en GitHub Pages: [Aquí](https://felipemunozca.github.io/desafio_nimrodelPubRestaurant/)
