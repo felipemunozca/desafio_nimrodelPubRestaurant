@@ -131,3 +131,12 @@ $('.modal-cerrar').click(function(){
 });
 
 
+/*** JQUERY Desafió 12 ***/
+
+$("#menu2").click(function(){
+    $('.carousel-nosotros').show();
+});
+
+$(".carousel-nosotros-cerrar").click(function(){
+    $(".carousel-nosotros").hide();
+});
